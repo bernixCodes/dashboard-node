@@ -1,0 +1,208 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+ .wrapper{
+    display: grid;
+    grid-template-columns: 23rem auto;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background-color: #4b71a6;
+ }
+
+ .authentication{
+    width: 100%;
+    padding: 1.9rem 0.5rem;
+    height: 100%;
+ }
+
+  form {
+    margin-top: 4rem;
+    width: 100%;
+    height: 80vh;
+    padding: 20px;
+    background-color: var(--color-primary-variant); 
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    position: relative;
+    background-color: #143056;
+    box-shadow: 2px 4px 4px 2px rgba(0, 0, 0, 0.23);
+ 
+ 
+ }
+ 
+  form .brand{
+    position: absolute;
+    top: 2rem;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 2rem 1.4rem;
+    height: 10rem;
+ }
+ 
+  form .brand img{
+    width: 12rem;
+    height: 12em;
+    object-fit: cover;
+    scale: 0.7;
+ }
+  form .error{
+    width: 92%;
+    height: 3rem;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(181, 157, 157);
+    
+    margin: 0 auto;
+    top: 1rem;
+    position: relative;
+    padding: 1rem 0.5rem;
+    border-radius: 10px;
+    display: none;
+    transition: 2000ms ease-in-out;
+ }
+
+  form .error .error-message{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    padding: 0.5rem 1rem;
+    margin: 0 auto;
+    color: red;
+    font-weight: 800;
+    font-size: larger;
+ }
+
+ 
+  form .form-group{
+    width: 100%;
+    height: 10rem;
+    margin-top: 2rem;
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 3rem;
+    position: relative;
+    padding: 1rem 0.5rem;
+
+ }
+
+  form .form-group .input-group{
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.6rem
+ }
+
+  form .form-group input{
+    top: 1rem;
+    width: 100%;
+    border: none;
+    border-bottom: 3px;
+    width: 100%;
+    height: 2.7rem;
+    outline:none;
+    border-radius: 8px;
+    padding: 0.1rem 1rem;
+    background-color: #243f65;
+    display: flex;
+    row-gap: 0.5rem;
+    color: #fff;
+ }
+ 
+  form .form-group input:focus{
+    box-shadow: 2px 4px 4px 2px rgba(0, 0, 0, 0.23);
+ }
+ 
+
+ 
+  form .form-group button{
+    margin-top: 2.3rem;
+    width: 100%;
+    border: none;
+    width: 100%;
+    height: 2.7rem;
+    border-radius: 8px;
+    padding: 0.1rem 1rem;
+    color: white;
+    background-color: #4b71a6;
+    outline: #143056;
+    font-size: 1rem;
+    box-shadow: 2px 4px 4px 2px rgba(0, 0, 0, 0.23);
+    
+ }
+ 
+  form .form-group button:hover{
+    background-color: white;
+    color: #143056;
+    border: 2px solid #143056;
+    outline: #143056;
+ }
+ 
+  form small{
+    color: white;
+    font-size: 1rem;
+    position: absolute;
+    bottom: 3rem;
+    left: 0;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 1rem;
+    width: 100%;
+     cursor: pointer;
+ }
+ 
+  form small a {
+    color: red; 
+    text-decoration: none;
+    font-weight: bold;
+ }
+
+  form small a:hover{
+    color: white;
+ }
+ 
+
+ .wallpaper{
+    background-image: url("./img/background.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+ }
+
+ button.sign-in{
+  box-shadow: 2px 4px 4px 2px rgba(0, 0, 0, 0.23);
+ }
+
+ @media only screen and (max-width: 556px)  {
+     
+    .wallpaper{
+        display: none;
+    }
+    .wrapper {
+        grid-template-columns: 1fr;
+        
+    }
+    .authentication{
+        width: 100%;
+        padding: 1rem 2.7rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+ 
+ }
