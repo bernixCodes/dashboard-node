@@ -1,16 +1,14 @@
 //app requirements and dependencies
-
-const express = require('express');
+const express = require("express");
+const bodyParser = require("body-parser");
+const cors = require("cors");
+const path = require("path");
+const routes = require("./routes");
 const app = express();
-const bodyParser = require('body-parser')
-const cors = require('cors')
-const path = require('path')
-const routes = require('./routes')
-    
-
+  
 const PORT = 7070;  //server port
 
-//middleware
+//middlewares
 //To parse json data
 app.use(bodyParser.json())
 //allow origin access

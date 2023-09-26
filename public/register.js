@@ -11,8 +11,13 @@ window.addEventListener("load", () => {
     errorMessage = document.querySelector(".error-message");
 
     if (password.value != passwordConfirm.value) {
+     
       error.style.display = "block";
       errorMessage.textContent = "Passwords do not match";
+      setTimeout(() => {
+        error.style.display = "none";
+        errorMessage.textContent = "";
+      }, 3000);
       return;
     }
 

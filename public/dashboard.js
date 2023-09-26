@@ -201,7 +201,7 @@ window.addEventListener("load", async () => {
               },
             }
           );
-          const response = await result.json();
+          await result.json();
           if (result.status === 200 || result.status === 201) {
             console.log("Deleted successfully");
 
